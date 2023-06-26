@@ -10,21 +10,21 @@ namespace Asinkronus_Multithread
     {
         public static async Task FirstAsync()
         {
-            Console.WriteLine("First Async Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
-            await Task.Delay(1000);
+            //Console.WriteLine("First Async Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
+            await Task.Delay(4000);
             Console.WriteLine("First Async Method Continuation on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
         }
 
         public static async Task SecondAsync()
         {
-            Console.WriteLine("Second Async Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
-            await Task.Delay(1000);
+            //Console.WriteLine("Second Async Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
+            await Task.Delay(2000);
             Console.WriteLine("Second Async Method Continuation on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
         }
 
         public static async Task ThirdAsync()
         {
-            Console.WriteLine("Third Async Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
+            //Console.WriteLine("Third Async Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
             await Task.Delay(1000);
             Console.WriteLine("Third Async Method Continuation on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
         }

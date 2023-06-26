@@ -11,14 +11,14 @@ namespace Asinkronus_Multithread
         public static void FirstMethod()
         {
             Console.WriteLine("First Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
-            Thread.Sleep(1000);
+            Thread.Sleep(3000);
             Console.WriteLine("First Method Continuation on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
         }
 
         public static void SecondMethod()
         {
             Console.WriteLine("Second Method on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
-            Thread.Sleep(1000);
+            Thread.Sleep(2000);
             Console.WriteLine("Second Method Continuation on Thread with Id: " + Thread.CurrentThread.ManagedThreadId);
         }
 
